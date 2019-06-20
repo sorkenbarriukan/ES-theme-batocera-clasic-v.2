@@ -1,0 +1,363 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>4</formatVersion>
+
+
+<!--    carrusel view-->
+
+<feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>horizontal</type>
+        <pos>0.01 -0.443</pos>
+        <size>1 1</size>
+        <logoScale>2</logoScale>
+        <logoSize>0.15 0.166</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>3</maxLogoCount>
+      </carousel>
+			
+      <text name="systemInfo">
+         <pos>0.16 0.94</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>FFFFFF</color>
+         <fontPath>./_art/Roboto-Medium.ttf</fontPath>
+	 <fontSize>0.03</fontSize>
+      </text>
+   </view>
+</feature>
+
+<!--    fin carrusel view-->
+
+
+
+
+<!--    video view-->
+
+	
+	  <view name="system,basic,detailed,grid,video">
+      <helpsystem name="help">
+      <fontPath>./_art/Roboto-Medium.ttf</fontPath>
+         <fontSize>0.0200</fontSize>      
+         <pos>0.03 0.14</pos> 
+         <textColor>FFFFFF</textColor>
+         <iconColor>FFFFFF</iconColor>
+      </helpsystem>
+   </view>
+ 
+      
+   <view name="basic,detailed,video">
+      <textlist name="gamelist">
+         <pos>0.5 0.54</pos>
+         <size>0.25 0.60</size>
+         <selectorColor>6aa033</selectorColor>
+         <selectedColor>000000</selectedColor>
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>f4f4f0</secondaryColor>
+         <fontPath>./_art/Roboto-Medium.ttf</fontPath>
+         <fontSize>0.02</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound>./_art/sound7.wav</scrollSound>
+         <alignment>left</alignment>
+      </textlist>
+   </view>
+    
+    
+    
+
+<!--    fin video view-->
+
+
+
+
+
+<!--    basic view-->
+
+   <view name="basic">
+      <image name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.125</pos>
+         <maxSize>0.35 0.15</maxSize>
+      </image>
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_art/.png</path>
+      </image>
+      
+    
+      <textlist name="gamelist">
+         <pos>0.35 0.20</pos>
+         <size>0.22 0.64</size>
+         <scrollSound>./_art/sound5.wav</scrollSound>
+         <alignment>center</alignment>
+      </textlist>
+   </view>
+   
+
+<!--    fin basic view-->
+
+
+
+
+<!--     automatic view-->
+
+  <view name="detailed,video">
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_art/.png</path>
+      </image>
+      
+      
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <pos>0.767 0.452</pos>
+         <size>0.46 0.430</size>
+      </image>
+      
+    <video name="md_video">
+             <origin>0.5 0.5</origin>
+         <pos>0.767 0.452</pos>
+         <size>0.46 0.430</size>
+         <delay>0</delay>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+      </video>
+      
+      <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_publisher, md_genre, md_playcount, md_lastplayed">
+         <pos>1 1</pos>
+      </text>
+      <text name="md_lbl_rating,md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount,md_lbl_players,md_developer, md_publisher, md_genre, md_playcount, md_lastplayed,md_description,md_players,md_releasedate">
+         <color>FFFFFF</color>
+         <fontPath>./_art/Roboto-Medium.ttf</fontPath>
+         <fontSize>0.0195</fontSize>
+      </text>
+      <text name="md_lbl_rating">
+      <color>9a0000</color>
+         <pos>0.30 0.215</pos>
+         <size>0.0625 0.025</size>
+      </text>
+      <rating name="md_rating">
+         <pos>0.40 0.215</pos>
+         <size>0.005 0.025</size>
+         <filledPath>./_art/star_filled.svg</filledPath>
+         <unfilledPath>./_art/star_empty.svg</unfilledPath>
+      </rating>
+      
+      <text name="md_lbl_players">
+      <color>f4811a</color>
+         <pos>0.30 0.280</pos>
+         <size>0.0625 0.025</size>
+      </text>
+      <text name="md_players">
+         <pos>0.40 0.280</pos>
+         <size>0.0375 0.025</size>
+      </text>
+      
+      <text name="md_lbl_releasedate">
+      <color>cd9642</color>
+         <pos>0.30 0.360</pos>
+         <size>0.0625 0.025</size>
+      </text>
+      <datetime name="md_releasedate">
+         <pos>0.40 0.360</pos>
+         <size>0.075 0.025</size>
+      </datetime>
+      
+      <text name="md_lbl_genre">
+      <color>f3ec29</color>
+         <pos>0.30 0.458</pos>
+         <size>0.0625 0.025</size>
+      </text>
+      <text name="md_genre">
+         <pos>0.40 0.454</pos>
+         <size>0.11 0.05</size>
+         </text>
+         
+         <text name="md_lbl_developer">
+         <color>dbcbad</color>
+         <pos>0.30 0.540</pos>
+	  <size>0.11 0.05</size>
+         </text>
+
+    <text name="md_developer">
+    <pos>0.40 0.540</pos>
+	<size>0.11 0.05</size>
+    </text>
+
+         
+         <text name="md_lbl_publisher">
+         <color>6aa033</color>
+<pos>0.30 0.650</pos>
+</text>
+<text name="md_publisher">
+<pos>0.40 0.650</pos>
+<size>0.11 0.04</size>
+</text>
+         
+         
+         <text name="md_lbl_lastplayed">
+<color>0093cf</color>
+<pos>0.30 0.730</pos>
+</text>
+<datetime name="md_lastplayed">
+<color>f6eeee</color>
+<pos>0.40 0.730</pos>
+</datetime>
+
+<text name="md_lbl_playcount">
+<color>b8ad91</color>
+<pos>0.30 0.810</pos>
+</text>
+<text name="md_playcount">
+<color>f6eeee</color>
+<pos>0.40 0.800</pos>
+</text>
+         
+     
+      <text name="md_description">
+         <pos>0.57 0.72</pos>
+         <size>0.400 0.12</size>
+         <color>FFFFFF</color>
+      </text>
+      
+      <textlist name="gamelist">
+         <pos>0.02 0.21</pos>
+         <size>0.22 0.65</size>
+         <scrollSound>./_art/sound4.wav</scrollSound>
+         <alignment>left</alignment>
+      </textlist>
+   </view>
+   
+   
+<!--    fin automatic view-->
+
+
+
+
+
+<!--    detailed view-->
+
+   <view name="detailed">
+      <image name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.21 0.065</pos>
+         <maxSize>0.12 0.12</maxSize>
+      </image>
+      
+      
+      <image name="md_image">
+          <origin>0.5 0.5</origin>
+         <pos>0.767 0.447</pos>
+         <maxSize>0.50 0.50</maxSize>
+      </image>
+      
+      
+      
+      <image name="md_marquee">
+         <pos>2000 2000</pos>
+         <origin>0 0</origin>
+         <maxSize>0 0</maxSize>
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.21 0.065</pos>
+         <maxSize>0.15 0.15</maxSize>
+      </image>
+    
+      <image name="md_marquee">
+         <pos>2000 2000</pos>
+         <origin>0 0</origin>
+         <maxSize>0 0</maxSize>
+      </image>
+   </view>
+   		
+   		
+		
+   <!--  fin  detailed view-->
+   
+   
+   
+    <!--  grid view-->
+      
+    <view name="grid">
+	<text name="md_genre">
+			<size>0.83 0.19</size>
+			<color>D3D3D3</color>
+			 <origin>0.5 0.5</origin>
+			<pos>1 1</pos>
+			<fontSize>0.0</fontSize>
+			<fontPath>./_art/Roboto-Medium.ttf</fontPath>
+			<zIndex>91</zIndex>  
+		</text>
+	
+	
+	
+
+	<text name="md_description">
+	  	<color>0d0c0d</color>
+		<fontSize>0.0</fontSize>
+		<fontPath>./_art/Roboto-Medium.ttf</fontPath>
+		<size>0.120 0.17</size>
+		<pos>1 1</pos>
+    </text>
+	
+
+	
+	 <helpsystem name="help">
+         <fontPath>./_art/Roboto-Medium.ttf</fontPath>
+         <fontSize>0.0200</fontSize>      
+         <pos>0.03 0.14</pos> 
+         <textColor>FFFFFF</textColor>
+         <iconColor>FFFFFF</iconColor>
+      </helpsystem>
+
+		<gridtile name="default">
+			<size>0.15 0.20</size>
+			<backgroundColor>00000000</backgroundColor>
+		</gridtile>
+	
+	 <image name="background" extra="true">
+         <origin>0 0</origin>
+         <path>./_art/grid.png</path>
+         <pos>0 0</pos>
+         <size>1 1</size>    		
+         <zIndex>8</zIndex>    
+      </image>
+      
+
+		<image name="logo">
+			<pos>0.43 0.07</pos>
+         <size>0.16 0.05</size>
+        <origin>0 0.5</origin>
+		</image>
+      
+      
+     <imagegrid name="gamegrid">
+			<pos>0.05 0.20</pos>
+			<size>0.95 0.60</size>
+			<margin>0 0</margin>
+		</imagegrid>
+	
+	
+	<gridtile name="selected">
+			<size>0.17 0.22</size>
+			<backgroundColor>0e8eff</backgroundColor>
+		</gridtile>
+</view>
+
+
+		
+     <!--  fin  grid view-->
+    
+    
+    
+</theme>
